@@ -1,0 +1,5 @@
+# githubにPushしないファイル
+Templates/
+Desktop.ini
+Thumbs.db
+_notes/

@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="../../Templates/main_jp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Funny Snowman: マウスポインタ(アニメカーソル)の作り方</title>
+<meta name="description" content="教えます。自分で好きなアニメーションのマウスポインターを作る手順。" />
+<!-- InstanceEndEditable -->
+<!-- inital scale -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- description and facebook -->
+<meta property="fb:admins" content="484056511604609"/>
+<meta property="fb:app_id" content="484056511604609"/>
+<!-- StyleSheet -->
+<link rel="stylesheet" media="(min-width: 640px)" href="../../main_jp_2012.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="../../main_jp_mobile.css">
+<!-- favicon -->
+<link rel="shortcut icon" href="https://funnysnowman.github.io/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="https://funnysnowman.github.io/favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35574608-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" src="../../geek/subindex.js"></script>
+
+<script type="text/javascript">
+     var appInsights=window.appInsights||function(a){
+         function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+     }({
+         instrumentationKey: "4c9ed889-e098-4033-b727-739f86ee2d94"
+     });
+
+     window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+  <div id="container">
+  <div class="blockLeft">    
+  <h1><a href="../../index.htm"><img src="../../img/logo.gif" alt="Funny Snowman" width="188" height="53" border="0" /></a></h1>
+  </div>
+
+  <div class="blockContact">
+  <a href="../../index_e.htm">English version</a> | <a href="https://funnysnowman-956c7.firebaseapp.com/" target="_self"><img src="../../img/i-memo.gif" alt="コメント" border="0" />ログイン</a> | <a href="https://forms.gle/d5Bp6jwhbFnQw6AK6"><img src="../../img/i-mail.gif" alt="問合せフォーム" width="32" height="32" border="0" />問合せ</a>  </div>
+
+<div id="blockNavi">
+      <ul>
+       <li><a href="../../index.htm">トップ</a></li>
+       <li><a href="../cursor/cur1.htm">カーソル</a></li>
+       <li><a href="../../sozai/index.htm">壁紙</a></li>
+       <li><a href="../../illust/paint1.html">イラスト</a></li>
+       <li><a href="../../geek/20170422intorogeek.html">ギークな事</a></li>
+     </ul>
+  <!-- end #globalNavi --></div>
+
+  <div id="contents">
+<!-- InstanceBeginEditable name="contents" -->
+
+  <!-- Facebook SDK1 -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=484056511604609";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Facebook SDK2 -->
+  
+  <div class="lecture">
+  <h2>Windowsパソコンでの設定</h2>
+  <a href="../howto/howtoinstall.htm">マウスポインターの設定方法はこちら</a>
+
+  <h2>アニメーションカーソルの作り方</h2>
+  <p>「いったい、どーやって動くカーソルを作っているの？」<br />
+    という質問メールをいただきましたので、ちょっとだけカーソルの作り方を紹介しちゃいます。<br />
+    <br />
+    例えば、すごく簡単な「てるてる坊主のカーソル」を作ってみましょうか…。</p>
+
+  <h3>ソフトウェアは何を使っているの？</h3>
+  <img src="img/disp1.gif" alt="mouse pointer editor" width="450" height="228" />
+  <p>私の使っているツールは Microangelo っていうソフトウェア。お試し版を使ってみて、簡単にキュートなカーソルができたのでそれからずっと使っています。<br />
+左の画面はアニメカーソル用ツールで、他にカーソル用、、アイコン用など目的別にツールが分かれているので、それぞれのツールのメニューが少なく操作はすっごく簡単。英語版だけど、絵を書いて保存するだけのシンプル作業なのでなんとかなりました。</p>
+  <div class="clear"></div>
+
+  <h3>最初の作業は『何を作るのかイメージすること』です。</h3>
+  <img src="img/disp2.gif" alt="mouse pointer editor" width="304" height="226" />
+  <p>カーソルを作るには、まず最初に何を作るのか画面の前でイメージすることから。ここでは画面に「てるてる坊主」をイメージして完成した姿を想像しましょう。</p>
+  <div class="clear"></div>
+
+  <h3>成功の秘訣は『りんかく』にかかっている！</h3>
+  <img src="img/disp3.gif" alt="mouse pointer editor" width="287" height="226" />
+  <p>カーソルは、32ドットｘ32ドットの大きさ。イメージした通りにマウスをたくみに操作して最初の線を描き始めます。描き始めは、おおざっぱで構いません。</p>
+  <img src="img/disp4.gif" alt="mouse pointer editor" width="175" height="150" />
+  <p>おおざっぱな輪郭ができたら、少し気をつかって１ドットずつ余計な線を消したり、追加したりして、なーんとなくバランスを整えていきます。<br />
+  イメージ通りの輪郭が作れればほぼ成功が見えてくるでしょう。</p>
+  <div class="clear"></div>
+
+  <h3>わくわくの『ぬり絵』</h3>
+  <img src="img/disp6.gif" alt="mouse pointer editor" width="257" height="220" />
+  <p>次にペンキを使って色を塗ります。</p>
+  <img src="img/disp5.gif" alt="mouse pointer editor" width="175" height="151" />
+  <p>一回でうまく線の内側を塗れると気持ちがいい。次に１ドットずつてるてる坊主の影の部分を灰色で描いていきます。</p>
+  <div class="clear"></div>
+
+  <h3>カーソルらしく『矢印』を追加。</h3>
+  <img src="img/disp7.gif" alt="mouse pointer editor" width="257" height="226" />
+  <p>キャラクターが完成したら、カーソルの矢印を輪郭→ぬり絵の順番で描いて絵が完成。このままCURという拡張子でファイルを保存すると、動かないカーソルができます。<br />
+    <br />
+  ■ホットスポットが使いやすさを左右する！<br />
+    矢印の先端のドット部分(一番左上)が画面の正確な場所を示しますが、このドットをホットスポットやスポットと呼びます。今回は初期設定と同じ左上なので変更しませんが、左利き用のカーソル(右上にスポット)や、テキスト入力用カーソル(左の真ん中あたり)などの場合は、ホットスポットの場所を設定します。</p>
+  <div class="clear"></div>
+
+  <h3>アニメカーソルはここからが本番！</h3>
+  <img src="img/disp8.gif" alt="mouse pointer editor" width="278" height="150" />
+  <p>左図の[New Frame]というアイコンを押すと画像がコピーされて２フレーム目の画像ができます。そしてこの２フレーム目の画像に手を加えると、ぱらぱら漫画のようなアニメをつくることができます。</p>
+  <div class="clear"></div>
+
+  <h3>フレームを作って動かすんです。</h3>
+  <img src="img/disp9.gif" alt="mouse pointer editor" width="245" height="220" />
+  <p>スカート？の部分が風でなびくように、２フレーム目の画像を描き直しました。ついでなので、１フレーム目との違いが分かりやすいように口を開けてみました。</p>
+  <div class="clear"></div>
+
+  <h3>そして完成。</h3>
+  <img src="img/ani.gif" alt="mouse pointer editor" width="110" height="142" />
+  <p>さあ、プレビュー画面で動きを確認してみます。いい感じですね。そして、拡張子ANIでファイルを保存して完成。<br />
+    <br />
+  ▼このカーソルのダウンロード<br />
+  <a href="teruteru01.ani" target="_blank">teruteru01.ani</a></p>
+  <div class="clear"></div>
+
+  <h3>カーソルの設定方法</h3>
+  <p>出来上がったカーソルをWindowsで使うには<a href="../howto/howtoinstall.htm">マウスポインターの設定方法</a>を参照してください。</p>
+  <div class="clear"></div>
+
+
+  <h3>ドット職人に最適な『マウス』</h3>
+  <p>カーソル制作やお絵かきツールなど画面を見ながら絵を描くって微妙なマウス操作が必要なので、つるつるのテーブルの上や手に合わないマウスを使うと、上手く描けずにイライラして嫌になったり指が痛くなったりしちゃいます。あんまり無理しないでね。私の手は大きめなので、大きな手にジャストフィットするマウスを探し続けてようやくロジクールのMX518ってのに出会いました(最新はロジクールG400 パフォーマンス オプティカルマウス G400)。そして思い通りにマウス操作でき手首が疲れないマウスパッド（iBUFFALO マウスパッド リストレスト一体型 低反発タイプ）も必須ですね。</p>
+
+  <div class="clear"></div>
+
+  <h3>えっ『カーソル作るソフトウェア』が欲しい？</h3>
+  <a href="http://www.rw-designer.com/cursor-maker" target="_blank"><img src="img/realworld.gif" alt="Realworld cursor editor" width="426" height="382" border="0" /></a>
+  <p>私が使い慣れている「<a href="http://www.microangelo.us/" target="_blank">MicroAngelo Toolset（別サイト）</a>」は良く使う機能だけのシンプルでおススメなのですが英語版です。このページの通りやってみたいという方は<a href="mt610-es-eval.exe"  onclick="_gaq.push(['_trackEvent','Cursor','003cow']);" target="_blank">こちらからお試し版をダウンロード</a>できます。</p>
+  <p>無料で日本語がいいっという方は左の画面の「<a href="http://www.rw-designer.com/cursor-maker" target="_blank">RealWorld Cursor Editor（別サイト）</a>」がおススメです。Realworldの方はウィンドウの拡大が可能、画像をキャプチャするなど高機能、なによりメニューは日本語というところがメリットです。</p>
+  <p>カーソルやアイコンを作ったら、ぜひ Funny Snowman にも教えてくださいね。</p>
+  <div class="clear"></div>
+  
+  <div align="right"><a href="#">▲上に戻る</a></div>
+    <!-- twitter -->
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <div class="fb-like" data-href="http://www.asahi-net.or.jp/~cb9i-kn/cur/howtocreate/createcursor.htm" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+  <!-- end of download --></div>
+  
+  <!-- google ad -->
+
+  <!--facebook comments1-->
+  <img src="../../img/line1.gif" alt="" />
+  <div class="fb-comments" data-href="http://www.asahi-net.or.jp/~cb9i-kn/cur/howtocreate/createcursor.htm" data-num-posts="5" data-width="470"></div>  
+  <!--facebook comments2-->
+
+  <!--amazon script1-->
+<script type="text/javascript" src="http://wms.assoc-amazon.jp/20070822/JP/js/link-enhancer-common.js?tag=funnysnowman1-22">
+</script>
+<noscript>
+    <img src="http://wms.assoc-amazon.jp/20070822/JP/img/noscript.gif?tag=funnysnowman1-22" alt="" />
+</noscript>
+  <!--amazon script2-->
+
+<!-- InstanceEndEditable -->
+  <!-- end #mainContent --></div>
+
+  <!-- google ad -->
+  <div align="center">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- レスポンシブ -->
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0482545472507313"
+     data-ad-slot="5937145218"
+     data-ad-format="auto"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </div>
+  <!-- google ad -->
+
+  <p></p>
+  <div id="footer">
+  &copy; FunnySnowman 1997-2021
+  <!-- end #footer --></div>
+  <!-- end #container --></div>
+  
+  <div id="blockAD">
+    <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-0482545472507313";
+    /* R Long */
+    google_ad_slot = "4688923211";
+    google_ad_width = 160;
+    google_ad_height = 600;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  </div>
+
+  <!-- コメントボード Firebase App -->
+  <div id="blockFB">
+  <iframe id="bbs" tile="Messages" width="350" height="1600" frameborder="0" background-color="#FFFFFF" src="https://funnysnowman-subset.firebaseapp.com/"></iframe>
+  </div>
+
+<!-- end #wrapper --></div>
+<IMG src="https://cgi.asahi-net.or.jp/cgi-bin/Count.cgi?df=index.dat&dd=B&sh=N">
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="../../Templates/main_jp.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>HDDをSSDに交換するときは、Windowsバックアップで出来るんだよね..？</title>
+<!-- InstanceEndEditable -->
+<!-- inital scale -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- description and facebook -->
+<meta property="fb:admins" content="484056511604609"/>
+<meta property="fb:app_id" content="484056511604609"/>
+<!-- StyleSheet -->
+<link rel="stylesheet" media="(min-width: 640px)" href="../../main_jp_2012.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="../../main_jp_mobile.css">
+<!-- favicon -->
+<link rel="shortcut icon" href="https://funnysnowman.github.io/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="https://funnysnowman.github.io/favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35574608-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" src="../../geek/subindex.js"></script>
+
+<script type="text/javascript">
+     var appInsights=window.appInsights||function(a){
+         function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+     }({
+         instrumentationKey: "4c9ed889-e098-4033-b727-739f86ee2d94"
+     });
+
+     window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+</script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+  <div id="container">
+  <div class="blockLeft">    
+  <h1><a href="../../index.htm"><img src="../../img/logo.gif" alt="Funny Snowman" width="188" height="53" border="0" /></a></h1>
+  </div>
+
+  <div class="blockContact">
+  <a href="../../index_e.htm">English version</a> | <a href="https://funnysnowman-956c7.firebaseapp.com/" target="_self"><img src="../../img/i-memo.gif" alt="コメント" border="0" />ログイン</a> | <a href="https://forms.gle/d5Bp6jwhbFnQw6AK6"><img src="../../img/i-mail.gif" alt="問合せフォーム" width="32" height="32" border="0" />問合せ</a>  </div>
+
+<div id="blockNavi">
+      <ul>
+       <li><a href="../../index.htm">トップ</a></li>
+       <li><a href="../../cur/cursor/cur1.htm">カーソル</a></li>
+       <li><a href="../../sozai/index.htm">壁紙</a></li>
+       <li><a href="../../illust/paint1.html">イラスト</a></li>
+       <li><a href="../../geek/20170422intorogeek.html">ギークな事</a></li>
+     </ul>
+  <!-- end #globalNavi --></div>
+
+  <div id="contents">
+<!-- InstanceBeginEditable name="contents" -->
+
+  <!-- Facebook SDK1 -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=484056511604609";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Facebook SDK2 -->
+  
+  <div class="lecture">
+
+  <h2>パソコンのHDDをSSDに交換するときの、Windowsバックアップって...。</h2>
+  <p>ハードディスクが故障しているらしい(&gt;_&lt;)。Windows7のタスクバーにポップアップで</p>
+  <b><p>    「！RAIDボリュームエラー<br />
+    RAID0ボリュームのドライブに障害が発生しました。<br />
+    データを今すぐバックアップしてください。」</p></b>
+  <p>    のメッセージが...。え!?RAID0ってデータのストライピングだから早いけれどその代わり壊れたらパソコンが動かなくなるって誰か言ってなかったっけ？へぇデータの一部は読み出しに失敗したけど復旧のチャンスはあるのか..。と感心している場合ではないっ。このままではいつ動かなくなるのか分からないからなるべく早く治さなきゃ。<br />
+    <br />
+    ２ヶ月は経過したでしょうか。うちのパソコンはまだ動いています。</p>
+  <h3>SSDは爆速だという記事に心躍った(^_^)。</h3>
+  <p>２ヶ月間も危険を放置していたが、今回の障害を言い訳にディスク構成を見直してパソコンを高速化するという野望が芽生えたので、早速SSDのお買い物。障害のあるディスクはS-ATA 250GBx2。RAID0を組んでいたので実効容量は500GBだがしかしSSDは高く240GBで1万7千円 (2013年2月時点)。Windowsのバージョンアップやパソコンのリプレースにと、うちのパソコンはC,Dドライブにパーティーションを2つに分けて、WindowsシステムのあるCドライブとデータファイルはDドライブに分けて保存していたので、今回はWindowsシステム用に240GB SSDを、データファイル用に大容量2TB HDDを新調することに決めた。楽しみ楽しみ。</p>
+  <img src="img/20130223a.jpg" alt="mouse pointer editor" width="702" height="500" />
+  <div class="clear"></div>
+  <p>SSDは2.5inchだったので、3.5→2.5変換トレイも買って帰ったのだが、IntelのBOX内に変換トレイが入っていたのでショック。実は最初に120GBのSSD買って、Windowsシステム領域だけで110GBも占有していたいので、120GB SSDは返品、240GB SDDに買い直ししていた為、何度もお店を往復するのが面倒だったので余った変換トレイはお蔵入り..（T_T）。</p>
+
+
+
+  <h3>さてハードウェアの準備は整った。OSの入れ替えはWindowsバックアップを使えばいいんだよな？</h3>
+  <p>（１）Windows7のコントロールパネルに「バックアップと復元」ってアイコンあるよね。</p>
+  <img src="img/20130223c.jpg" alt="Realworld cursor editor" width="485" height="129" border="0" />
+  <div class="clear"></div>
+  <p>（２）「システムイメージの作成」を選んで</p>
+  <img src="img/20130223b.jpg" alt="Realworld cursor editor" width="677" height="240" border="0" />
+  <div class="clear"></div>
+  <p>（３）「どこに保存するか」を決めて</p>
+  <img src="img/20130223d.jpg" alt="Realworld cursor editor" width="477" height="277" border="0" />
+  <div class="clear"></div>
+  <p>（４）「何を保存するか」を決めると</p>
+  <img src="img/20130223e.jpg" alt="Realworld cursor editor" width="497" height="302" border="0" />
+  <div class="clear"></div>
+  <p>（５）「バックアップ」が出来たーっ</p>
+  <img src="img/20130223f.jpg" alt="Realworld cursor editor" width="283" height="174" border="0" /> 
+  <div class="clear"></div>
+  <p>（６）と思ったら、まだ終わらない。次は「修復ディスク」を作れとか。そうか、この修復ディスクでバックアップしたシステムを一発SSDに復元するんだな、きっと。</p>
+  <img src="img/20130223h.jpg" alt="Realworld cursor editor" width="400" height="212" border="0" /> 
+  <div class="clear"></div>
+
+  <h3>いよいよバックアップしたWindowsを瀑速SSDへ入れるよ</h3>
+  <p>間違って「回復」って書いちゃったけど、修復ディスクをセットして、パソコンを再起動。次へ次へと画面に従って進めていくと、システムの回復中..って。よしいい調子。</p>
+  <p><b>「システム修復出来ませんでした。」</b></p>
+  <p><b>(゜o゜)</b></p>
+  <p>ナゼ...？<br />
+    ここまで順調だったじゃない...。夢の爆速SSDまであと１歩だったのに。</p>
+
+  <h3>同じハードウェアじゃないと駄目？</h3>
+  <p>何度もバックアップを試し、インターネットでも調べて、結局、MicrosoftのSupportサイトに「異なるハードウェアを使用したコンピュータにバックアップを復元する方法」ってのがあって、WindowsバックアップでHDD→SSDの引っ越しができるんだろうと勝手に考えていましたが、ようく読むと「バックアップしたのと同じコンピュータに復元して修復する」「別のハードウェアの異なるコンピュータに復元すると問題が発生する可能性があります」とあり、windowsバックアップでは引っ越しはできないと気付いた。4時間はロスしただろうか...。</p>
+
+  <h3>途方に暮れていると、救世主が登場。</h3>
+  <p>そういえばIntelのBOXに付属品の説明書がポロリって落ちてたな。箱は開けても取扱説明書は読まないので何が書いてあったのか知らなかったけれど、何やらデータ移動ツールがダウンロードできるらしいことが書いてある。とりあえずダウンロードしてみた。</p>
+  <img src="img/20130223i.jpg" alt="Realworld cursor editor" width="400" height="94" border="0" />
+  <div class="clear"></div>
+  <p>かっちょえー。パソコンを丸ごとカプセル化して、新しい環境に移行してくれるんだねーっ。今度こそ。</p>
+  <img src="img/20130223j.jpg" alt="Realworld cursor editor" width="173" height="204" border="0" />
+  <div class="clear"></div>
+
+  <h3>たらーん</h3>
+  <p>すんなりとSSD環境へ移行できました。あんまりスムーズだったので画面キャプチャ撮りそびれちゃいましたが、新しいSSD環境でパソコン復活です。ご覧の通りディスクのエラーも消滅し、大事な写真や動画を守るために今度はRAID1(ミラーリング)を構築しました。</p>
+  <img src="img/20130223k.jpg" alt="Realworld cursor editor" width="453" height="199" border="0" />
+  <div class="clear"></div>
+  <p>パソコンのスペックを計測してみると、ディスクのスコアが5.5→7.8へ改善しました。使ってみて爆速は体感できないのが残念だけど、Outlookとか遅かったSimcity4とかアプリの起動がちょこっと早くなったのかなぁ。実際にディスクにガリガリ読み書きするようなアプリってなかなか無いよねそういえば。</p>
+  <img src="img/20130223l.jpg" alt="Realworld cursor editor" width="591" height="239" border="0" />
+  <div class="clear"></div>
+  
+  <div align="right"><a href="#">▲上に戻る</a></div>
+  <!-- end of download --></div>
+  
+
+  <!--facebook comments1-->
+  <img src="../../img/line1.gif" alt="" />
+  <div class="fb-comments" data-href="http://www.asahi-net.or.jp/~cb9i-kn/msg/log/20130223.htm" data-num-posts="5" data-width="470"></div>  
+  <!--facebook comments2-->
+
+<!-- InstanceEndEditable -->
+  <!-- end #mainContent --></div>
+
+  <!-- google ad -->
+  <div align="center">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- レスポンシブ -->
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0482545472507313"
+     data-ad-slot="5937145218"
+     data-ad-format="auto"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </div>
+  <!-- google ad -->
+
+  <p></p>
+  <div id="footer">
+  &copy; FunnySnowman 1997-2021
+  <!-- end #footer --></div>
+  <!-- end #container --></div>
+  
+  <div id="blockAD">
+    <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-0482545472507313";
+    /* R Long */
+    google_ad_slot = "4688923211";
+    google_ad_width = 160;
+    google_ad_height = 600;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+  </div>
+
+  <!-- コメントボード Firebase App -->
+  <div id="blockFB">
+  <iframe id="bbs" tile="Messages" width="350" height="1600" frameborder="0" background-color="#FFFFFF" src="https://funnysnowman-subset.firebaseapp.com/"></iframe>
+  </div>
+
+<!-- end #wrapper --></div>
+<IMG src="https://cgi.asahi-net.or.jp/cgi-bin/Count.cgi?df=index.dat&dd=B&sh=N">
+</body>
+<!-- InstanceEnd --></html>
